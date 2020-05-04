@@ -9,11 +9,11 @@ Earlier, to integrate AWS S3 with IBM Sterling B2B Integrator a custom service h
 
 By using this service, we can perform the following operations:
 
-•	GET, PUT, DELETE files
+  •	GET, PUT, DELETE files
 
-•	Create or delete a directory from AWS S3
+  •	Create or delete a directory from AWS S3
 
-•	Post objects either from a mailbox or a file system to AWS S3
+  •	Post objects either from a mailbox or a file system to AWS S3
 
 In the following sections, we provide step by step instructions to integrate Sterling B2B Integrator and Sterling File Gateway with AWS S3.
 
@@ -51,3 +51,15 @@ Note: When you create the custom protocol business process, you must provide sec
 2.	Provide custom protocol BP details (defined in the step 1) in the AFTExtension tag, available in the AFTExtensionsCustomer.xml file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources/xml 
 
 3.	Provide the definition of the custom protocol business process in the AFTExtensionsCustomer.properties file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources
+
+4.	Set up the following configuration in the Sterling File Gateway dashboard:
+
+   a.	Create IBM_SFG_Community – While creating the community, select the Partner Listens for Protocol connection.This will      load AWS S3 custom protocol in the Available Protocol list.
+
+  b.	Create IBM_SFG_AWSS3_Producer_Partner – This partner initiates connection
+
+  c.	Create IBM_SFG_AWSS3_Consumer_Partner – This partner will listen for connections. Provide Bucket Name, Access Key, and Secret Key value.
+
+  d.	Create IBM_SFG_AWSS3_Routing_Channel_Template
+
+  e.	Create IBM_SFG_AWSS3_Routing_Channel
