@@ -18,3 +18,7 @@ By using this service, we can perform the following operations:
 In the following sections, we provide step by step instructions to integrate Sterling B2B Integrator and Sterling File Gateway with AWS S3.
 
 ## Install AWS S3 Libraries into IBM Sterling B2Bi Instance
+NOTE: The following instructions are common for both Sterling B2B Integrator and Sterling File Gateway.
+
+1.	Download latest AWS SDK from Amazon WebServices.
+[pip](https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip)
