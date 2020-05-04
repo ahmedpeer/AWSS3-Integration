@@ -39,3 +39,15 @@ Note: When you create the business process, you must provide secret key and acce
 2.	Execute the BP manually.
 
 3.	Login to AWS Management Console - S3 Service to verify that the message/object is posted into the correct bucket.
+
+## Integrate IBM Sterling File Gateway with AWS S3 Service
+
+NOTE: Complete the following steps if you are using IBM Sterling File Gateway.
+
+1.	Create a custom protocol business process to fetch messages from a defined location and post to AWS S3 bucket using the AWS S3 Client Service.
+
+Note: When you create the custom protocol business process, you must provide secret key and access key of the related AWS user in the business process. Additionally, you must provide the filename and mailbox message ID in the business process.
+
+2.	Provide custom protocol BP details (defined in the step 1) in the AFTExtension tag, available in the AFTExtensionsCustomer.xml file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources/xml 
+
+3.	Provide the definition of the custom protocol business process in the AFTExtensionsCustomer.properties file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources
