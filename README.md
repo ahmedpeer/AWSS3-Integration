@@ -70,3 +70,7 @@ e.	Create IBM_SFG_AWSS3_Routing_Channel
 
 7.	Log in to AWS Management Console - S3 service to verify the message/object is posted into the correct bucket.
 
+## Conclusion
+
+Successful file routing from IBM Sterling B2B /IBM SFG to AWS S3 bucket.
+
