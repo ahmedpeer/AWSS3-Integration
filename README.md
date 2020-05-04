@@ -54,7 +54,7 @@ Note: When you create the custom protocol business process, you must provide sec
 
 4.	Set up the following configuration in the Sterling File Gateway dashboard:
 
-   a.	Create IBM_SFG_Community – While creating the community, select the Partner Listens for Protocol connection.This will      load AWS S3 custom protocol in the Available Protocol list.
+  a.	Create IBM_SFG_Community – While creating the community, select the Partner Listens for Protocol connection.This will      load AWS S3 custom protocol in the Available Protocol list.
 
   b.	Create IBM_SFG_AWSS3_Producer_Partner – This partner initiates connection
 
