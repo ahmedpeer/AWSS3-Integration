@@ -16,3 +16,5 @@ By using this service, we can perform the following operations:
 •	Post objects either from a mailbox or a file system to AWS S3
 
 In the following sections, we provide step by step instructions to integrate Sterling B2B Integrator and Sterling File Gateway with AWS S3.
+
+##Install AWS S3 Libraries into IBM Sterling B2Bi Instance
