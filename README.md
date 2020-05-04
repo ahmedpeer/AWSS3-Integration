@@ -22,3 +22,10 @@ NOTE: The following instructions are common for both Sterling B2B Integrator and
 
 1.	Download latest AWS SDK from Amazon WebServices.
 [latest AWS SDK](https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip)
+
+2.	Install the SDK using the install3rdParty.sh script from the /bin directory of IBM Sterling B2B Integrator installation directory.
+
+3.	Update the dynamicclasspath.cfg file, which is available in the /properties directory of Sterling B2B Integrator installation directory to avoid conflict with other class files.
+
+4.	Run setup.sh.
+
