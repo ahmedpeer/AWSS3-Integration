@@ -9,11 +9,11 @@ Earlier, to integrate AWS S3 with IBM Sterling B2B Integrator a custom service h
 
 By using this service, we can perform the following operations:
 
-  •	GET, PUT, DELETE files
+•	GET, PUT, DELETE files
 
-  •	Create or delete a directory from AWS S3
+•	Create or delete a directory from AWS S3
 
-  •	Post objects either from a mailbox or a file system to AWS S3
+•	Post objects either from a mailbox or a file system to AWS S3
 
 In the following sections, we provide step by step instructions to integrate Sterling B2B Integrator and Sterling File Gateway with AWS S3.
 
