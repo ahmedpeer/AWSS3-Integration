@@ -63,3 +63,10 @@ c.	Create IBM_SFG_AWSS3_Consumer_Partner – This partner will listen for connec
 d.	Create IBM_SFG_AWSS3_Routing_Channel_Template
 
 e.	Create IBM_SFG_AWSS3_Routing_Channel
+
+5.	Upload files to the appropriate Producer mailbox and await routing.
+
+6.	Check the status of the routed file at Arrived File tab for producer and Deliver tab for consumer in Sterling File Gateway admin console.
+
+7.	Log in to AWS Management Console - S3 service to verify the message/object is posted into the correct bucket.
+
