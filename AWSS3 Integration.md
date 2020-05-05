@@ -39,3 +39,34 @@ Note: When you create the business process, you must provide secret key and acce
 2.	Execute the BP manually.
 
 3.	Login to AWS Management Console - S3 Service to verify that the message/object is posted into the correct bucket.
+
+## Integrate IBM Sterling File Gateway with AWS S3 Service
+
+NOTE: Complete the following steps if you are using IBM Sterling File Gateway.
+
+1.	Create a custom protocol business process to fetch messages from a defined location and post to AWS S3 bucket using the AWS S3 Client Service.
+
+Note: When you create the custom protocol business process, you must provide secret key and access key of the related AWS user in the business process. Additionally, you must provide the filename and mailbox message ID in the business process.
+
+2.	Provide custom protocol BP details (defined in the step 1) in the AFTExtension tag, available in the AFTExtensionsCustomer.xml file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources/xml 
+
+3.	Provide the definition of the custom protocol business process in the AFTExtensionsCustomer.properties file, which is in the following path - <B2BiInstallationDirectory>/container/Applications/aft/WEB-INF/classes/resources
+
+4.	Set up the following configuration in the Sterling File Gateway dashboard:
+
+a.	Create IBM_SFG_Community – While creating the community, select the Partner Listens for Protocol connection.This will      load AWS S3 custom protocol in the Available Protocol list.
+
+b.	Create IBM_SFG_AWSS3_Producer_Partner – This partner initiates connection
+
+c.	Create IBM_SFG_AWSS3_Consumer_Partner – This partner will listen for connections. Provide Bucket Name, Access Key, and Secret Key value.
+
+d.	Create IBM_SFG_AWSS3_Routing_Channel_Template
+
+e.	Create IBM_SFG_AWSS3_Routing_Channel
+
+5.	Upload files to the appropriate Producer mailbox and await routing.
+
+6.	Check the status of the routed file at Arrived File tab for producer and Deliver tab for consumer in Sterling File Gateway admin console.
+
+7.	Log in to AWS Management Console - S3 service to verify the message/object is posted into the correct bucket.
+
