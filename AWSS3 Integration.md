@@ -73,3 +73,4 @@ e.	Create IBM_SFG_AWSS3_Routing_Channel
 ## Conclusion
 
 Successful file routing from IBM Sterling B2B /IBM SFG to AWS S3 bucket.
+
