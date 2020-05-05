@@ -28,3 +28,14 @@ NOTE: The following instructions are common for both Sterling B2B Integrator and
 3.	Update the dynamicclasspath.cfg file, which is available in the /properties directory of Sterling B2B Integrator installation directory to avoid conflict with other class files.
 
 4.	Run setup.sh.
+
+## Integrate IBM Sterling B2B Integrator with AWS S3
+
+NOTE: Complete the following steps if you are using only Sterling B2B Integrator.
+
+1.	Create a business process to fetch messages from a defined location and post to AWS S3 bucket using the AWSS3ClientService. For example, fetching files from a staging directory.
+Note: When you create the business process, you must provide secret key and access key of the related AWS user in the business process. Additionally, you must provide the filename and mailbox message ID in the business process.
+
+2.	Execute the BP manually.
+
+3.	Login to AWS Management Console - S3 Service to verify that the message/object is posted into the correct bucket.
