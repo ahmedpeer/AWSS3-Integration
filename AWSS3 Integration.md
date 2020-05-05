@@ -16,3 +16,15 @@ By using this service, we can perform the following operations:
 •	Post objects either from a mailbox or a file system to AWS S3
 
 In the following sections, we provide step by step instructions to integrate Sterling B2B Integrator and Sterling File Gateway with AWS S3.
+
+## Install AWS S3 Libraries into IBM Sterling B2Bi Instance
+NOTE: The following instructions are common for both Sterling B2B Integrator and Sterling File Gateway.
+
+1.	Download latest AWS SDK from Amazon WebServices.
+[latest AWS SDK](https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip)
+
+2.	Install the SDK using the install3rdParty.sh script from the /bin directory of IBM Sterling B2B Integrator installation directory.
+
+3.	Update the dynamicclasspath.cfg file, which is available in the /properties directory of Sterling B2B Integrator installation directory to avoid conflict with other class files.
+
+4.	Run setup.sh.
